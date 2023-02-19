@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1 () {
@@ -130,6 +131,34 @@ public class Main {
 
         double resultMaxWeight = excessWeight / maxWeight;
         System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то через " + (int) resultMaxWeight + " дней он похудеет на 7 кг.");
+    }
+
+    public static void task8 () {
+
+        System.out.println("Задача 8");
+
+        int plusPercent = 10;
+
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
+        int year = 12;
+
+        int payMasha = masha * year;
+        int upMasha = masha + (masha * plusPercent) / 100;
+        int yearPayMasha = (upMasha * 12) - payMasha;
+        System.out.println("«Маша теперь получает " + upMasha + " рублей. Годовой доход вырос на " + yearPayMasha + " рублей».");
+
+        int payDenis = denis * year;
+        int upDenis = denis + (denis * plusPercent) / 100;
+        int yearPayDenis = (upDenis * 12) -payDenis;
+        System.out.println("«Денис теперь получает " + upDenis + " рублей. Годовой доход вырос на " + yearPayDenis + " рублей».");
+
+        int payKristina = kristina * year;
+        int upKristina = kristina + (kristina * plusPercent) / 100;
+        int yearPayKristina = (upKristina * 12) -payKristina;
+        System.out.println("«Кристина теперь получает " + upKristina + " рублей. Годовой доход вырос на " + yearPayKristina + " рублей».");
+
     }
 
 }
