@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1 ();
         task2();
+        task3();
     }
 
     public static void task1 () {
@@ -34,6 +35,22 @@ public class Main {
         short tyShort = -159;
         short typShort = 27897;
         byte tByte = 67;
+
+    }
+
+    public static void task3 () {
+
+        System.out.println("Задача 3");
+
+        int allPaper = 480;
+        int LudmilaPavlovna = 23;
+        int AnnaSergeevna = 27;
+        int EkaterinaAndreevna = 30;
+
+
+        int studenPaper = allPaper / (LudmilaPavlovna + AnnaSergeevna + EkaterinaAndreevna);
+
+        System.out.println("«На каждого ученика рассчитано " + studenPaper + " листов бумаги».");
 
     }
 
