@@ -3,6 +3,7 @@ public class Main {
         task1 ();
         task2();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -52,6 +53,27 @@ public class Main {
 
         System.out.println("«На каждого ученика рассчитано " + studenPaper + " листов бумаги».");
 
+    }
+
+    public static void task4 () {
+
+        System.out.println("Задача 4");
+
+        int bottles = 16 / 2;
+        int month = 30;
+        int day = 24 * 60;
+
+        long twentyMinutes = 20 * bottles;
+        System.out.println("«За 20 минут, машина произвела " + twentyMinutes + " штук бутылок».");
+
+        long oneDay = day * bottles;
+        System.out.println("«В сутки, машина произвела " + oneDay + " штук бутылок».");
+
+        long threeDays = (day * 3) * bottles;
+        System.out.println("«За 3 дня, машина произвела " + threeDays + " штук бутылок».");
+
+        long oneMonth = (month * day) * bottles;
+        System.out.println("«За 1 месяц, машина произвела " + oneMonth + " штук бутылок».");
     }
 
 }
