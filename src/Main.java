@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1 () {
@@ -114,6 +115,21 @@ public class Main {
         double kgResult = grResult / kg;
 
         System.out.println("Вес спортивного завтрака составил " + (int) grResult + " грамм в граммах и " + kgResult + " кг в килограммах.");
+    }
+
+    public static void task7 () {
+
+        System.out.println("Задача 7");
+
+        double excessWeight = 7 * 1000;
+        double minWeight = 0.250 * 1000;
+        double maxWeight = 0.500 * 1000;
+
+        double resultMinWeight = excessWeight / minWeight;
+        System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то через " + (int) resultMinWeight + " дней он похудеет на 7 кг.");
+
+        double resultMaxWeight = excessWeight / maxWeight;
+        System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то через " + (int) resultMaxWeight + " дней он похудеет на 7 кг.");
     }
 
 }
