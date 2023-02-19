@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1 () {
@@ -74,6 +75,21 @@ public class Main {
 
         long oneMonth = (month * day) * bottles;
         System.out.println("«За 1 месяц, машина произвела " + oneMonth + " штук бутылок».");
+    }
+
+    public static void task5 () {
+
+        System.out.println("Задача 5");
+
+        int paint = 120;
+        int whitePaint = 2;
+        int brownPaint = 4;
+        int classRoom = whitePaint + brownPaint;
+        int allRooms = paint / classRoom;
+        int resultWhitePaint = whitePaint * allRooms;
+        int resultBrownPaint = brownPaint * allRooms;
+
+        System.out.println("«В школе, где " + allRooms + " классов, нужно " + resultWhitePaint + " банок белой краски и " + resultBrownPaint + " банок коричневой краски».");
     }
 
 }
