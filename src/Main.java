@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1 ();
+        task2();
     }
 
     public static void task1 () {
@@ -20,6 +21,20 @@ public class Main {
         System.out.println("«Значение переменной typeLong с типом long равно " + typeLong + "».");
         System.out.println("«Значение переменной typeFloat с типом float равно " + typeFloat + "».");
         System.out.println("«Значение переменной typeDouble с типом Double равно " + typeDouble + "».");
+    }
+
+    public static void task2 () {
+
+        System.out.println("Задача 2");
+
+        double tFloat = 27.12;
+        long tLong = 987678965549L;
+        float tDouble = 2.786f;
+        short tShort = 569;
+        short tyShort = -159;
+        short typShort = 27897;
+        byte tByte = 67;
+
     }
 
 }
