@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1 () {
@@ -90,6 +91,29 @@ public class Main {
         int resultBrownPaint = brownPaint * allRooms;
 
         System.out.println("«В школе, где " + allRooms + " классов, нужно " + resultWhitePaint + " банок белой краски и " + resultBrownPaint + " банок коричневой краски».");
+    }
+
+    public static void task6 () {
+
+        System.out.println("Задача 6");
+
+        double bananas = 5;
+        double milk = 200;
+        double iceCream = 2;
+        double eggs = 4;
+        double ml = 1.05;
+
+        double grBananas = bananas * 80;
+        double grMilk = ml * milk;
+        double grIceCream = iceCream * 100;
+        double grEggs = eggs * 70;
+        double kg = 1000;
+
+        double grResult = grBananas + grMilk + grIceCream + grEggs;
+
+        double kgResult = grResult / kg;
+
+        System.out.println("Вес спортивного завтрака составил " + (int) grResult + " грамм в граммах и " + kgResult + " кг в килограммах.");
     }
 
 }
